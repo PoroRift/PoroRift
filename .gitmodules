@@ -1,0 +1,6 @@
+[submodule "pororift-backend"]
+	path = pororift-backend
+	url = https://github.com/PoroRift/pororift-backend.git
+[submodule "pororift-client"]
+	path = pororift-client
+	url = https://github.com/PoroRift/pororift-client.git
