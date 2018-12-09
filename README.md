@@ -1,7 +1,22 @@
 # PoroRift Main Project Repository
 Main Project Repository
 
-# Reading Materials
+### Prerequisites 
+1. Docker
+
+### Getting Started
+1. Initialize and Update the `submodules`.
+```
+git submodule update --init --recusive
+```
+
+2. 
+Build and run docker-compose. This will build everytime you run.
+```
+docker-compose up --build 
+```
+
+### Reading Materials
 1. Angular: 
     - https://angular.io/
 2. Angular Universal Service-side rendering : 
