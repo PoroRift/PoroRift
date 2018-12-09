@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  proxy:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "3000:3000"
+    
+    container_name: pororift_proxy
+
+    links:
+      - backend
+    # stdin_open: true
+    # tty: true
+
+  backend:
+    build:
+      context: ./pororift-backend
+      dockerfile: Dockerfile
+    
+    ports:
+      - "3001:3001"
+
+    container_name: pororift-backend
+
