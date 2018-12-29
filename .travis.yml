@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+env:
+  COMPOSE_VERSION: 1.23.1
+
+before_install:
+  # Docker compose install
+  - sudo curl -L "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  - sudo chmod +x /usr/local/bin/docker-compose
+  - sudo docker-compose --version
+
+install:
+  # For now, build containers with docker compose
+  - sudo docker-compose build
+
+script:
+  # For now, make sure containers can start successfully
+  - sudo docker-compose up -d
+  - sudo docker-compose ps
+
+after_script:
+  # For now, make sure containers can shutdown gracefully
+  - sudo docker-compose down
+  - sudo docker-compose ps
