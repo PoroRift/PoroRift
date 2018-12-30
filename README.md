@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/PoroRift/pororift.svg?branch=master)](https://travis-ci.org/PoroRift/pororift)
+
 # PoroRift Main Project Repository
 Main Project Repository
 
-### Prerequisites 
+### Prerequisites
 1. Docker
 
 ### Getting Started
@@ -10,25 +12,24 @@ Main Project Repository
 git submodule update --init --recusive
 ```
 
-2. 
-Build and run docker-compose. This will build everytime you run.
+2. Build and run docker-compose. This will build everytime you run.
 ```
-docker-compose up --build 
+docker-compose up --build
 ```
 
 ### Reading Materials
-1. Angular: 
+1. Angular:
     - https://angular.io/
-2. Angular Universal Service-side rendering : 
+2. Angular Universal Service-side rendering :
     - https://angular.io/guide/universal
-3. Angular Material : 
-    - https://material.angular.io/ 
+3. Angular Material :
+    - https://material.angular.io/
     - https://github.com/angular/material2
-4. TypeScript: 
+4. TypeScript:
     - https://www.typescriptlang.org/play/
 5. Unit Testing (AAA) :
     - https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80
-6. Delightful JavaScript Testing: 
+6. Delightful JavaScript Testing:
     - https://jestjs.io/
-7. The fastest backend web framework for Go: 
+7. The fastest backend web framework for Go:
     - https://iris-go.com/
